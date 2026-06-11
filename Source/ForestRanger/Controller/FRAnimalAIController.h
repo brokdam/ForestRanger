@@ -11,4 +11,10 @@ class FORESTRANGER_API AFRAnimalAIController : public AAIController
 {
 	GENERATED_BODY()
 	
+public: 
+	UPROPERTY(EditDefaultsOnly)
+	UBehaviorTree* BTAsset;
+	
+	virtual void OnPossess(APawn* InPawn) override;
+	
 };
